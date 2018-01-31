@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="external/suda/SudaSDKs" remote="suda" name="android_external_suda_SudaSDKs" />
+  <project path="packages/apps/Calendar" remote="suda" name="android_packages_apps_Calendar" groups="pdk-fs" /> 
+  <project path="packages/apps/Contacts" remote="suda" name="android_packages_apps_Contacts" />
+  <project path="packages/providers/PhoneLocationProvider" remote="suda" name="android_packages_provider_PhoneLocationProvider" /> 
+</manifest>

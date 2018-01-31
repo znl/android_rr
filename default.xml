@@ -22,10 +22,15 @@
 	   fetch="https://github.com/ResurrectionRemix"
 	   revision="nougat" />
 
+  <remote  name="suda"
+           fetch="https://github.com/SudaMod"
+           revision="sm-3.1" />
+		   
+  <remote  name="znl"
+           fetch="https://github.com/znl"
+           revision="nougat" />
+
   <!-- AOSP Projects -->
-  <project path="build" name="android_build" remote="rr" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
   <project path="build/kati" name="LineageOS/android_build_kati" groups="pdk,tradefed" />
   <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="aosp" >
@@ -374,7 +379,6 @@
   <project path="ndk" name="platform/ndk" groups="generic_fs" remote="aosp" />
   <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" groups="pdk-cw-fs,pdk-fs" remote="aosp" />
   <project path="packages/apps/Bluetooth" name="LineageOS/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <project path="packages/apps/Calendar" name="LineageOS/android_packages_apps_Calendar" groups="pdk-fs" />
   <project path="packages/apps/Camera2" name="LineageOS/android_packages_apps_Camera2" groups="pdk-fs" />
   <project path="packages/apps/CarrierConfig" name="LineageOS/android_packages_apps_CarrierConfig" groups="pdk-cw-fs,pdk-fs" />
   <project path="packages/apps/CellBroadcastReceiver" name="LineageOS/android_packages_apps_CellBroadcastReceiver" groups="pdk-cw-fs,pdk-fs" />
@@ -493,5 +497,7 @@
 
   <include name="snippets/rr-n.xml" />
   <include name="snippets/cm.xml" />
+  <include name="snippets/sm.xml" />
+  <include name="snippets/my.xml" />
 
 </manifest>
